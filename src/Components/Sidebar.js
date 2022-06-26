@@ -32,8 +32,8 @@ const Sidebar = () => {
 
         <ul className='cities'>
           <li>
-            <button className='city' onClick={() => searchCity('Bengalore')}>
-            Bengalore
+            <button className='city' onClick={() => searchCity('Bengaluru')}>
+            Bengaluru
             </button>
           </li>
           <li>

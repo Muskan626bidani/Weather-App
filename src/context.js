@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const rootUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
-// api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
 
 const WeatherContext = React.createContext();
 
 const WeatherProvider = ({ children }) => {
-  const [city, setCity] = useState('Tel Aviv');
+  const [city, setCity] = useState('Mumbai');
   const [temperature, setTemperature] = useState(0);
   // Date
   const [dayOfWeek, setDayOfWeek] = useState('');
