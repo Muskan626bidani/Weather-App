@@ -1,9 +1,11 @@
 import React from 'react';
 import { WeatherContext } from '../context.js';
 import mainClear from '../images/main-clear.jpeg';
+import mainHaze from '../images/haze.jpeg';
 import mainRainy from '../images/main-rainy.jpg';
 import phoneRainy from '../images/phone-rainy.jpg';
 import phoneWarm from '../images/phone-warm.jpg';
+
 
 const Background = () => {
   const { weatherCondition } = React.useContext(WeatherContext);
@@ -30,7 +32,10 @@ const Background = () => {
       documentBody.style.background = `url(${mainRainy}) no-repeat center center/cover`;
     }
   }
-
+ if (weatherCondition === 'Haze') {
+      documentBody.style.background = `url(${mainHaze}) no-repeat center center/cover`;
+    }
+  }
   return <></>;
 };
 
